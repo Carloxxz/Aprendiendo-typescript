@@ -60,3 +60,31 @@ function add(x: number | string, y: number | string) {
 add(1, 2)  // 3
 add('one', 'two') // "onetwo"
 add(1, "two") // error
+
+// Tipos de intersección
+
+interface Employe {
+    employeeID: number
+    age: number
+}
+
+interface Manager {
+    stockPlan: boolean
+}
+
+const employee: Employe & Manager = {
+    employeeID: 123,
+    age: 18,
+    stockPlan: true
+}
+
+// Definición de literales
+
+type answer = 'yes' | 'no' | 'maybe' | 'ok'
+let result: answer = 'nel' //  error
+
+// Matrices y tuplas
+
+let list: number[] = [1, 2, 3]
+let list2: Array<number> = [1, 2, 3]
+let persona: [string, number] = ['carlos', 21] // no se pueden agregar mas elementos en ka tupla
