@@ -147,7 +147,7 @@ myIceCream = ['chocolate', 'vanilla', 'strawberry'];
 let myStr: string = myIceCream[0];
 console.log(myStr);
 
-// Interfaz en una API
+// Interfaz en el uso de una API
 
 const fetchURL = 'https://jsonplaceholder.typicode.com/posts'
 // Interface describing the shape of our json data
