@@ -88,3 +88,13 @@ let result: answer = 'nel' //  error
 let list: number[] = [1, 2, 3]
 let list2: Array<number> = [1, 2, 3]
 let persona: [string, number] = ['carlos', 21] // no se pueden agregar mas elementos en ka tupla
+
+
+// interfaz sirven para describir un objeto, asignar nombres a los tipos del objeto y parametrizarlos, 
+// y componer tipos de objetos con nombre existentes en otros nuevos
+
+interface Employee {
+    firstName: string;
+    lastName: string;
+    fullName(): string;
+}
