@@ -174,3 +174,38 @@ async function showPost() {
 }
 
 showPost();
+
+// Parametros obligatorios
+
+function addNumbers(x: number, y: number): number {
+    return x + y;
+}
+
+addNumbers(1, 2); // Returns 3
+addNumbers(1);    // Returns an error
+
+// Parametros opcionales
+function addNumber(x: number, y?: number): number {
+    if (y === undefined) {
+        return x;
+    } else {
+        return x + y;
+    }
+}
+
+addNumber(1, 2); // Returns 3
+addNumber(1);    // Returns 1
+
+
+// Creación de clases
+
+class Car {
+    // Properties
+
+    // Constructor
+
+    // Accessors
+
+    // Methods
+
+}

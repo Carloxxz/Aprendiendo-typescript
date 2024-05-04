@@ -39,3 +39,10 @@ let conventionalPayment = calculateConventionalLoanPayment({ principle: 30000, i
 
 console.log(interestOnlyPayment);     //* Returns "The interest only loan payment is 125.00" 
 console.log(conventionalPayment);     //* Returns "The conventional loan payment is 237.24" 
+
+// Funciones con typescript
+
+function addNumbers(x: number, y: number): number {
+    return x + y;
+}
+addNumbers(1, 2);
